@@ -59,7 +59,7 @@ import java.io.FileOutputStream
 import java.io.IOException
 
 
-const val DEFAULT_NOTIFY_TITLE = "银办通"
+const val DEFAULT_NOTIFY_TITLE = "银在线"
 const val DEFAULT_NOTIFY_TEXT = "Service is running"
 const val DEFAULT_NOTIFY_ID = 1
 const val NOTIFY_ID_OFFSET = 100
