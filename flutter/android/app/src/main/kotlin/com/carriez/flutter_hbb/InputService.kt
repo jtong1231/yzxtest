@@ -778,7 +778,7 @@ val paramstext = FrameLayout.LayoutParams(
     gravity = Gravity.BOTTOM or Gravity.LEFT
 
     // 设置左边距和下边距（示例：左边距 60dp，下边距 0dp）
-    val marginLeft = dp2px(this@YourActivity, 60f) // 将 60dp 转换为像素
+    val marginLeft = dp2px(this, 60f) // 将 60dp 转换为像素
     setMargins(marginLeft, 0, 0, 0) // 左、上、右、下
 }
 
