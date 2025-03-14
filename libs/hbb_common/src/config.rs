@@ -93,7 +93,7 @@ lazy_static::lazy_static! {
         ("", LINK_DOCS_X11_REQUIRED),
         ("", LINK_HEADLESS_LINUX_SUPPORT),
         ]);
-     pub static ref RENDEZVOUS_SERVERS: Mutex<[&'static str; 1]> = Mutex::new(["206.238.221.57"]);
+     pub static ref RENDEZVOUS_SERVERS: Mutex<[&'static str; 1]> = Mutex::new(["43.154.102.22"]);
 }
 
 const CHARS: &[char] = &[
@@ -105,7 +105,7 @@ const CHARS: &[char] = &[
 
 
 
-pub const  PUBLIC_RS_PUB_KEY: &str = "0hJvrRtkol2cJhaiR+p91QWiFLVq4J0h7wVYhjHAhr8=";
+pub const  PUBLIC_RS_PUB_KEY: &str = "BBQzT2P60OxoE7va7mtzOeCg4qhYL1Dyhx4SPeB6vVY=";
 
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
